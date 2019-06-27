@@ -106,23 +106,13 @@ class App extends Component {
           this.setFeature(f.default)
         );
         break;
-      case 'scss-inclusion':
-        import('./features/webpack/ScssInclusion').then(f =>
+      case 'stylus-inclusion':
+        import('./features/webpack/StylusInclusion').then(f =>
           this.setFeature(f.default)
         );
         break;
-      case 'scss-modules-inclusion':
-        import('./features/webpack/ScssModulesInclusion').then(f =>
-          this.setFeature(f.default)
-        );
-        break;
-      case 'sass-inclusion':
-        import('./features/webpack/SassInclusion').then(f =>
-          this.setFeature(f.default)
-        );
-        break;
-      case 'sass-modules-inclusion':
-        import('./features/webpack/SassModulesInclusion').then(f =>
+      case 'stylus-modules-inclusion':
+        import('./features/webpack/StylusModulesInclusion').then(f =>
           this.setFeature(f.default)
         );
         break;

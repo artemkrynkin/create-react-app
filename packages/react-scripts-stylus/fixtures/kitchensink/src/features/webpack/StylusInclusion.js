@@ -6,6 +6,6 @@
  */
 
 import React from 'react';
-import './assets/scss-styles.scss';
+import './assets/stylus-styles.styl';
 
-export default () => <p id="feature-scss-inclusion">We love useless text.</p>;
+export default () => <p id="feature-stylus-inclusion">We love useless text.</p>;

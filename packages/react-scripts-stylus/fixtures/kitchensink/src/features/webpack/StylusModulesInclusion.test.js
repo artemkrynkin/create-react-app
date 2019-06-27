@@ -7,11 +7,11 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ScssModulesInclusion from './ScssModulesInclusion';
+import StylusModulesInclusion from './StylusModulesInclusion';
 
-describe('scss modules inclusion', () => {
+describe('stylus modules inclusion', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<ScssModulesInclusion />, div);
+    ReactDOM.render(<StylusModulesInclusion />, div);
   });
 });

@@ -7,11 +7,11 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SassModulesInclusion from './SassModulesInclusion';
+import StylusInclusion from './StylusInclusion';
 
-describe('sass modules inclusion', () => {
+describe('stylus inclusion', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<SassModulesInclusion />, div);
+    ReactDOM.render(<StylusInclusion />, div);
   });
 });

@@ -56,29 +56,16 @@ describe('Integration', () => {
       ]);
     });
 
-    it('scss inclusion', async () => {
-      doc = await initDOM('scss-inclusion');
-      matchCSS(doc, [/#feature-scss-inclusion\{background:.+;color:.+}/]);
+    it('stylus inclusion', async () => {
+      doc = await initDOM('stylus-inclusion');
+      matchCSS(doc, [/#feature-stylus-inclusion\{background:.+;color:.+}/]);
     });
 
-    it('scss modules inclusion', async () => {
-      doc = await initDOM('scss-modules-inclusion');
+    it('stylus modules inclusion', async () => {
+      doc = await initDOM('stylus-modules-inclusion');
       matchCSS(doc, [
-        /.+scss-styles_scssModulesInclusion.+\{background:.+;color:.+}/,
-        /.+assets_scssModulesIndexInclusion.+\{background:.+;color:.+}/,
-      ]);
-    });
-
-    it('sass inclusion', async () => {
-      doc = await initDOM('sass-inclusion');
-      matchCSS(doc, [/#feature-sass-inclusion\{background:.+;color:.+}/]);
-    });
-
-    it('sass modules inclusion', async () => {
-      doc = await initDOM('sass-modules-inclusion');
-      matchCSS(doc, [
-        /.+sass-styles_sassModulesInclusion.+\{background:.+;color:.+}/,
-        /.+assets_sassModulesIndexInclusion.+\{background:.+;color:.+}/,
+        /.+stylus-styles_stylusModulesInclusion.+\{background:.+;color:.+}/,
+        /.+assets_stylusModulesIndexInclusion.+\{background:.+;color:.+}/,
       ]);
     });
 

@@ -53,12 +53,7 @@ declare module '*.module.css' {
   export default classes;
 }
 
-declare module '*.module.scss' {
-  const classes: { [key: string]: string };
-  export default classes;
-}
-
-declare module '*.module.sass' {
+declare module '*.module.styl' {
   const classes: { [key: string]: string };
   export default classes;
 }
